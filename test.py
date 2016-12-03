@@ -2,7 +2,7 @@ import sys
 sys.path.insert(0, 'utils/RAKE')
 from rake import *
 
-text = "Compatibility of systems of linear constraints over the set of natural numbers. Criteria of compatibility of a system of linear Diophantine equations, strict inequations, and nonstrict inequations are considered. Upper bounds for components of a minimal set of solutions and algorithms of construction of minimal generating sets of solutions for all types of systems are given. These criteria and the corresponding algorithms for constructing a minimal supporting set of solutions can be used in solving all the considered types of systems and systems of mixed types."
+text = "I'm tryna put you in the worst mood, ah P1 cleaner than your church shoes, ah Milli point two just to hurt you, ah All red Lamb' just to tease you, ah None of these toys on lease too, ah Made your whole year in a week too, yah Main bitch out your league too, ah Side bitch out of your league too, ah"
 
 # Split text into sentences
 sentenceList = split_sentences(text)
@@ -25,8 +25,16 @@ if debug: print sortedKeywords
 
 totalKeywords = len(sortedKeywords)
 if debug: print totalKeywords
-print sortedKeywords[0:(totalKeywords / 3)]
+# print sortedKeywords[0:(totalKeywords / 3)]
 
 rake = Rake("utils/RAKE/SmartStoplist.txt")
 keywords = rake.run(text)
-print keywords
+# print keywords
+
+ret = []
+i = 0
+while i < 5:
+    li = keywords[i][0]
+    ret.append(li)
+    i += 1
+print ret
