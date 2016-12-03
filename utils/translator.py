@@ -8,7 +8,7 @@ import os
 import socket
 from socket import AF_INET, SOCK_DGRAM
 import sys
-sys.path.insert(0, 'lyrics-search')
+# sys.path.insert(0, 'lyrics-search')
 from search import *
 
 def prep(csvFileName): # preps csv file
@@ -47,6 +47,6 @@ def findRef(id, client_access_token):
     request.add_header("User-Agent", "curl/7.9.8 (i686-pc-linux-gnu) libcurl 7.9.8 (OpenSSL 0.9.6b) (ipv6 enabled)") #Must include user agent of some sort, otherwise 403 returned
     return request
 
-# print prep("lyrics-search\output\output-yahMainbitchoutyourleaguetooahSidebitchoutofyourleaguetooah.csv")
+#print prep("lyrics-search\output\output-yahMainbitchoutyourleaguetooahSidebitchoutofyourleaguetooah.csv")
 client_id, client_secret, client_access_token = load_credentials()
-print findRef(prep("lyrics-search\output\output-yahMainbitchoutyourleaguetooahSidebitchoutofyourleaguetooah.csv")[0],client_access_token)
+#print findRef(prep("lyrics-search\output\output-yahMainbitchoutyourleaguetooahSidebitchoutofyourleaguetooah.csv")[0],client_access_token)
