@@ -13,18 +13,32 @@
 <table align="center">
   <tr>
     <th  style="width: 350px" ; height="70px"><font size="45" face="Clear Line">Input</font></th> 
-    <th  style="width: 350px" ; height="70px"><font size="45" face="Clear Line" font-family: "Clear Line"">Translation</font></th> 
+    <th  style="width: 350px" ; height="70px"><font size="45" face="Clear Line" font-family: "Clear Line">Translation</font></th> 
   </tr>
   <tr>
     <td height="100px"> <form>
   <br>
-  <form method="post">
-  <center> <textarea rows="4" cols="50"> </textarea> 
-  <input type="submit" value="Submit" >
+  <form method="post" >
+  <center> <textarea rows="4" cols="50" > </textarea> 
+  <input type="submit" name="lyric" value="Submit" >
   </form> </center> 
   <br></td>
  
     <td height="100px"> <div class="boxed">
+      <!--<script>
+        $.getJSON('code.json', function Get(yourUrl){
+            var Httpreq = new XMLHttpRequest(); // a new request
+            Httpreq.open("GET",yourUrl,false);
+            Httpreq.send(null);
+            return Httpreq.responseText;          
+        }
+
+        var json_obj = JSON.parse(Get(yourUrl));
+        console.log("this is the author name: "+json_obj.author_name);-->
+
+        {{ID}}
+
+      </script>
 		</div> </td>
 	
   </tr>
